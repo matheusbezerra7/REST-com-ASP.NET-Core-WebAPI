@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FBPYM4Jpfc5Wnc/HeX62eNVntE5kyz0T7uLB8bVzs/khOafBwnaZnYePFvzgSVVZ0tJ0JPfkjRgADsOUWitmwA==",
+  "dgSpecHash": "YsdfLEsC+kx1838BZmwlp05hLU/deNLh7Dbx+/aQZ40MlMngmi+ZDA7K5oYEqR6SvKR0UYIT0xyHe1xg6zwhYg==",
   "success": true,
-  "projectFilePath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+  "projectFilePath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\fluentvalidation\\8.5.0\\fluentvalidation.8.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",

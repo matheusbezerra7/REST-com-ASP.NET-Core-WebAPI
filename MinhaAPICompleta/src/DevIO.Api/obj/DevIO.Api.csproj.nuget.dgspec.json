@@ -1,17 +1,99 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {}
+    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {}
   },
   "projects": {
-    "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {
+    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
         "projectName": "DevIO.Api",
-        "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\obj\\",
+        "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
+              },
+              "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
+                "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectName": "DevIO.Business",
+        "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+        "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,22 +125,95 @@
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
+            "FluentValidation": {
               "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[8.5.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectName": "DevIO.Data",
+        "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+        "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.1, )"
             }
           },
           "imports": [

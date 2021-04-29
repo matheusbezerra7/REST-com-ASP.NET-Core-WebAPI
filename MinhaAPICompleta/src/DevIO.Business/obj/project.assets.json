@@ -820,11 +820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+      "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
       "projectName": "DevIO.Business",
-      "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+      "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\obj\\",
+      "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

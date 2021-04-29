@@ -15,3 +15,8 @@ E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\obj
 E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\obj\Debug\netcoreapp2.2\DevIO.Api.dll
 E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\obj\Debug\netcoreapp2.2\DevIO.Api.pdb
 E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\obj\Debug\netcoreapp2.2\DevIO.Api.genruntimeconfig.cache
+E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Business.dll
+E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
+E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\obj\Debug\netcoreapp2.2\DevIO.Api.csproj.CopyComplete
+E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Data.dll
+E:\Labs\Desenvolvedor.io\Rest com AspNet.core\MinhaAPICompleta\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Data.pdb
