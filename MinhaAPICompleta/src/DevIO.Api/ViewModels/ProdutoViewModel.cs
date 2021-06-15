@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -32,8 +34,6 @@ namespace DevIO.Api.ViewModels
         public string Imagem { get; set; }
 
         [Required(ErrorMessage = "O Campo {0} é obrigatorio")]
-       
-
         public decimal Valor { get; set; }
 
         [Required(ErrorMessage = "O Campo {0} é obrigatorio")]

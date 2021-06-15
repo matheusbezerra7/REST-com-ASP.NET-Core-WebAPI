@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using DevIO.Business.Interfaces;
+using DevIO.Business.Intefaces;
 using DevIO.Business.Models;
 using DevIO.Business.Models.Validations;
 

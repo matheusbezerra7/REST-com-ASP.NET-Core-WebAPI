@@ -1,9 +1,6 @@
 ﻿using DevIO.Business.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DevIO.Data.Mappings
 {
@@ -11,25 +8,24 @@ namespace DevIO.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Fornecedor> builder)
         {
-            builder.HasKey(f => f.Id);
+            builder.HasKey(p => p.Id);
 
-            builder.Property(f => f.Nome)
-                .HasColumnType("varchar(200)")
-                .IsRequired();
+            builder.Property(p => p.Nome)
+                .IsRequired()
+                .HasColumnType("varchar(200)");
 
-            builder.Property(f => f.Documento)
-                .HasColumnType("varchar(14)")
-                .IsRequired();
+            builder.Property(p => p.Documento)
+                .IsRequired()
+                .HasColumnType("varchar(14)");
 
-            //1:1 => Fornecedor : Endereco
+            // 1 : 1 => Fornecedor : Endereco
             builder.HasOne(f => f.Endereco)
                 .WithOne(e => e.Fornecedor);
 
-            //1 : N => Fornecedor : Produtos
+            // 1 : N => Fornecedor : Produtos
             builder.HasMany(f => f.Produtos)
                 .WithOne(p => p.Fornecedor)
                 .HasForeignKey(p => p.FornecedorId);
-
 
             builder.ToTable("Fornecedores");
         }

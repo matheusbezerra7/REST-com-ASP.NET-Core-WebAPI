@@ -3,8 +3,8 @@ using System;
 using DevIO.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace DevIO.Data.Migrations
 {
@@ -15,9 +15,9 @@ namespace DevIO.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
-                .HasAnnotation("ProductVersion", "2.2.6-servicing-10079")
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+                .HasAnnotation("ProductVersion", "2.2.4-servicing-10062")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128)
+                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
             modelBuilder.Entity("DevIO.Business.Models.Endereco", b =>
                 {
@@ -30,28 +30,28 @@ namespace DevIO.Data.Migrations
 
                     b.Property<string>("Cep")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(8)");
 
                     b.Property<string>("Cidade")
                         .IsRequired()
                         .HasColumnType("varchar(100)");
 
                     b.Property<string>("Complemento")
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(250)");
 
                     b.Property<string>("Estado")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(50)");
 
                     b.Property<Guid>("FornecedorId");
 
                     b.Property<string>("Logradouro")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(200)");
 
                     b.Property<string>("Numero")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
 
@@ -70,11 +70,11 @@ namespace DevIO.Data.Migrations
 
                     b.Property<string>("Documento")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(14)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(200)");
 
                     b.Property<int>("TipoFornecedor");
 
@@ -94,7 +94,7 @@ namespace DevIO.Data.Migrations
 
                     b.Property<string>("Descricao")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(1000)");
 
                     b.Property<Guid>("FornecedorId");
 
@@ -104,7 +104,7 @@ namespace DevIO.Data.Migrations
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("varchar(100)");
+                        .HasColumnType("varchar(200)");
 
                     b.Property<decimal>("Valor");
 

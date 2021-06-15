@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {}
+    "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {}
   },
   "projects": {
-    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {
+    "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
         "projectName": "DevIO.Api",
-        "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
+        "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Api\\obj\\",
+        "outputPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "netcoreapp2.2": {
             "targetAlias": "netcoreapp2.2",
             "projectReferences": {
-              "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
-                "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
+              "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
               },
-              "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
-                "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj"
+              "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
+                "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj"
               }
             }
           }
@@ -52,7 +52,7 @@
           "dependencies": {
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[2.0.1, )"
+              "version": "[6.1.0, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -64,6 +64,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -86,14 +90,14 @@
         }
       }
     },
-    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+    "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
         "projectName": "DevIO.Business",
-        "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\obj\\",
+        "outputPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -125,9 +129,13 @@
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
             "FluentValidation": {
               "target": "Package",
-              "version": "[8.5.0, )"
+              "version": "[8.3.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -150,14 +158,14 @@
         }
       }
     },
-    "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
+    "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectUniqueName": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
         "projectName": "DevIO.Data",
-        "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Data\\obj\\",
+        "outputPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -177,8 +185,8 @@
           "netcoreapp2.2": {
             "targetAlias": "netcoreapp2.2",
             "projectReferences": {
-              "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
-                "projectPath": "E:\\Labs\\Desenvolvedor.io\\Rest com AspNet.core\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
+              "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "E:\\Labs\\Desenvolvedor.io\\REST-com-ASP.NET-Core-WebAPI\\MinhaAPICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
               }
             }
           }
@@ -193,27 +201,27 @@
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.2.6, )"
+              "version": "[2.2.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",
-              "version": "[2.2.6, )"
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[2.2.4, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
-              "target": "Package",
-              "version": "[1.1.1, )"
             }
           },
           "imports": [

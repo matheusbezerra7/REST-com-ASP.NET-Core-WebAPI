@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DevIO.Business.Interfaces;
+﻿using DevIO.Business.Intefaces;
 using DevIO.Business.Models;
-using DevIO.Business.Models.Validations;
-using DevIO.Business.Notifications;
+using DevIO.Business.Notificacoes;
 using FluentValidation;
 using FluentValidation.Results;
 
@@ -19,12 +15,6 @@ namespace DevIO.Business.Services
             _notificador = notificador;
         }
 
-        protected void Notificar(string mensagem)
-        {
-            _notificador.Handle(new Notificacao(mensagem));
-
-        }
-
         protected void Notificar(ValidationResult validationResult)
         {
             foreach (var error in validationResult.Errors)
@@ -33,13 +23,19 @@ namespace DevIO.Business.Services
             }
         }
 
-        protected bool ExecutarValidacao<TV, TE>(TV  validacao, TE entidade) where TV : AbstractValidator<TE> where TE : Entity
+        protected void Notificar(string mensagem)
+        {
+            _notificador.Handle(new Notificacao(mensagem));
+        }
+
+        protected bool ExecutarValidacao<TV, TE>(TV validacao, TE entidade) where TV : AbstractValidator<TE> where TE : Entity
         {
             var validator = validacao.Validate(entidade);
 
-            if (validator.IsValid) return true;
-            
+            if(validator.IsValid) return true;
+
             Notificar(validator);
+
             return false;
         }
     }
