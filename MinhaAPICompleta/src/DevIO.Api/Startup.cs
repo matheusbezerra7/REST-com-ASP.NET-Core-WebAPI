@@ -57,8 +57,9 @@ namespace DevIO.Api
             }
             else
             {
-                app.UseCors("Development");
+                app.UseCors("Production");
                 app.UseHsts();
+
             }
 
             app.UseAuthentication();
