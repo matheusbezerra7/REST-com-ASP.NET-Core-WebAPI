@@ -27,24 +27,151 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "DevIO.Api/1.0.0": {
+      "devio.api/1.0.0": {
         "dependencies": {
+          "AspNetCore.HealthChecks.Publisher.ApplicationInsights": "2.2.0",
+          "AspNetCore.HealthChecks.Publisher.Datadog": "2.2.0",
+          "AspNetCore.HealthChecks.Publisher.Prometheus": "2.2.0",
+          "AspNetCore.HealthChecks.Publisher.Seq": "2.2.2",
+          "AspNetCore.HealthChecks.SqlServer": "2.2.0",
+          "AspNetCore.HealthChecks.UI": "2.2.0",
+          "AspNetCore.HealthChecks.UI.Client": "2.2.0",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
           "DevIO.Business": "1.0.0",
           "DevIO.Data": "1.0.0",
+          "Elmah.Io.AspNetCore": "3.8.101",
+          "Elmah.Io.AspNetCore.HealthChecks": "3.7.80",
+          "Elmah.Io.Extensions.Logging": "3.10.15",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Versioning": "3.1.6",
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "3.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4",
+          "Microsoft.Extensions.Configuration.Abstractions": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Swashbuckle.AspNetCore": "4.0.0"
+          "Swashbuckle.AspNetCore": "4.0.0",
+          "elmah": "1.2.2",
+          "elmah.io": "2.0.29"
         },
         "runtime": {
-          "DevIO.Api.dll": {}
+          "devio.api.dll": {}
         },
         "compile": {
-          "DevIO.Api.dll": {}
+          "devio.api.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.Publisher.ApplicationInsights/2.2.0": {
+        "dependencies": {
+          "Microsoft.ApplicationInsights": "2.7.2",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.Publisher.ApplicationInsights.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.Publisher.ApplicationInsights.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.Publisher.Datadog/2.2.0": {
+        "dependencies": {
+          "DogStatsD-CSharp-Client": "3.3.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.Publisher.Datadog.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.Publisher.Datadog.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.Publisher.Prometheus/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0",
+          "prometheus-net": "2.1.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.Publisher.Prometheus.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.Publisher.Prometheus.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.Publisher.Seq/2.2.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0",
+          "Microsoft.Extensions.Http": "2.2.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.Publisher.Seq.dll": {
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.2.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.Publisher.Seq.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.SqlServer/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0",
+          "System.Data.SqlClient": "4.6.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.SqlServer.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.SqlServer.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.EntityFrameworkCore": "2.2.4",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.1",
+          "Microsoft.EntityFrameworkCore.Sqlite.Design": "1.1.5",
+          "Microsoft.Extensions.Configuration.Binder": "2.2.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions": "2.2.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.UI.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.UI.dll": {}
+        }
+      },
+      "AspNetCore.HealthChecks.UI.Client/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/HealthChecks.UI.Client.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/HealthChecks.UI.Client.dll": {}
         }
       },
       "AutoMapper/8.1.0": {
@@ -77,6 +204,116 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "DogStatsD-CSharp-Client/3.3.0": {
+        "dependencies": {
+          "System.Net.NameResolution": "4.3.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/StatsdClient.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp2.0/StatsdClient.dll": {}
+        }
+      },
+      "elmah/1.2.2": {
+        "dependencies": {
+          "elmah.corelibrary": "1.2.2"
+        }
+      },
+      "elmah.corelibrary/1.2.2": {
+        "runtime": {
+          "lib/Elmah.dll": {
+            "assemblyVersion": "1.2.14706.0",
+            "fileVersion": "1.2.14706.955"
+          }
+        },
+        "compile": {
+          "lib/Elmah.dll": {}
+        }
+      },
+      "elmah.io/2.0.29": {
+        "dependencies": {
+          "elmah.io.core": "2.0.29"
+        }
+      },
+      "Elmah.Io.AspNetCore/3.8.101": {
+        "dependencies": {
+          "Elmah.Io.Client": "3.11.15",
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "Microsoft.Extensions.Hosting": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elmah.Io.AspNetCore.dll": {
+            "assemblyVersion": "3.8.101.0",
+            "fileVersion": "3.8.101.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Elmah.Io.AspNetCore.dll": {}
+        }
+      },
+      "Elmah.Io.AspNetCore.HealthChecks/3.7.80": {
+        "dependencies": {
+          "Elmah.Io.Client": "3.11.15",
+          "Microsoft.Extensions.Diagnostics.HealthChecks": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elmah.Io.AspNetCore.HealthChecks.dll": {
+            "assemblyVersion": "3.7.80.0",
+            "fileVersion": "3.7.80.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Elmah.Io.AspNetCore.HealthChecks.dll": {}
+        }
+      },
+      "Elmah.Io.Client/3.11.15": {
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "2.3.21"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elmah.Io.Client.dll": {
+            "assemblyVersion": "3.11.15.0",
+            "fileVersion": "3.11.15.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Elmah.Io.Client.dll": {}
+        }
+      },
+      "elmah.io.core/2.0.29": {
+        "dependencies": {
+          "elmah.corelibrary": "1.2.2",
+          "Elmah.Io.Client": "3.11.15"
+        },
+        "runtime": {
+          "lib/net40/Elmah.Io.dll": {
+            "assemblyVersion": "2.0.29.0",
+            "fileVersion": "2.0.29.0"
+          }
+        },
+        "compile": {
+          "lib/net40/Elmah.Io.dll": {}
+        }
+      },
+      "Elmah.Io.Extensions.Logging/3.10.15": {
+        "dependencies": {
+          "Elmah.Io.Client": "3.11.15",
+          "Microsoft.Extensions.Logging": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll": {
+            "assemblyVersion": "3.10.15.0",
+            "fileVersion": "3.10.15.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll": {}
+        }
+      },
       "FluentValidation/8.3.0": {
         "dependencies": {
           "System.ComponentModel.Annotations": "4.5.0"
@@ -89,6 +326,23 @@
         },
         "compile": {
           "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
+      "Microsoft.ApplicationInsights/2.7.2": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Diagnostics.DiagnosticSource": "4.5.0",
+          "System.Diagnostics.StackTrace": "4.3.0",
+          "System.Net.Requests": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.ApplicationInsights.dll": {
+            "assemblyVersion": "2.7.2.0",
+            "fileVersion": "2.7.2.23439"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.ApplicationInsights.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.Versioning/3.1.6": {
@@ -118,6 +372,20 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll": {}
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.1.0": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.18136"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/2.2.4": {
@@ -169,6 +437,58 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational.Design/1.1.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.4",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {
+            "assemblyVersion": "1.1.5.0",
+            "fileVersion": "1.1.5.31115"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Relational.Design.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite/2.1.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite.Core": "2.1.1",
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite.Core/2.1.1": {
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.1.0",
+          "Microsoft.EntityFrameworkCore.Relational": "2.2.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {
+            "assemblyVersion": "2.1.1.0",
+            "fileVersion": "2.1.1.18157"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.5": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Relational.Design": "1.1.5",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.1.1",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Sqlite.Design.dll": {
+            "assemblyVersion": "1.1.5.0",
+            "fileVersion": "1.1.5.31115"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.EntityFrameworkCore.Sqlite.Design.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.SqlServer/2.2.4": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "2.2.4",
@@ -182,6 +502,54 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.21": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.21.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
+      "prometheus-net/2.1.3": {
+        "dependencies": {
+          "protobuf-net": "2.3.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Prometheus.NetStandard.dll": {}
+        }
+      },
+      "protobuf-net/2.3.4": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit.ILGeneration": "4.3.0",
+          "System.Reflection.Emit.Lightweight": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime.Serialization.Primitives": "4.3.0",
+          "System.Xml.XmlSerializer": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/protobuf-net.dll": {
+            "assemblyVersion": "2.3.4.0",
+            "fileVersion": "2.3.4.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/protobuf-net.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -206,6 +574,125 @@
         },
         "compile": {
           "lib/netstandard1.0/Remotion.Linq.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.linux": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.osx": "1.1.11",
+          "SQLitePCLRaw.lib.e_sqlite3.v110_xp": "1.1.11",
+          "SQLitePCLRaw.provider.e_sqlite3.netstandard11": "1.1.11"
+        },
+        "runtime": {
+          "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.11": {
+        "runtimeTargets": {
+          "runtimes/alpine-x64/native/libe_sqlite3.so": {
+            "rid": "alpine-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm/native/libe_sqlite3.so": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libe_sqlite3.so": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-armel/native/libe_sqlite3.so": {
+            "rid": "linux-armel",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-musl-x64/native/libe_sqlite3.so": {
+            "rid": "linux-musl-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libe_sqlite3.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x86/native/libe_sqlite3.so": {
+            "rid": "linux-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.11": {
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libe_sqlite3.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.11": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/e_sqlite3.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/e_sqlite3.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win8-arm/native/e_sqlite3.dll": {
+            "rid": "win8-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.11": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/4.0.0": {
@@ -295,6 +782,49 @@
           "System.Reflection.Extensions": "4.3.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.Net.NameResolution/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.Handles": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Principal.Windows": "4.5.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "runtime.native.System": "4.3.0"
+        }
+      },
+      "System.Net.Requests/4.3.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.2.0",
+          "System.Collections": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tracing": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Primitives": "4.3.0",
+          "System.Net.WebHeaderCollection": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "System.Net.WebHeaderCollection/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0"
         }
       },
       "DevIO.Business/1.0.0": {
@@ -3434,10 +3964,59 @@
     }
   },
   "libraries": {
-    "DevIO.Api/1.0.0": {
+    "devio.api/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspNetCore.HealthChecks.Publisher.ApplicationInsights/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lnhh6RVJCDL5jW5nqK6glcs/LofJteaXMC4WeCQRQ3KQQcURSccXO8S8Fy+jChtVgY9eGVqRtIWm7JLRgMew2w==",
+      "path": "aspnetcore.healthchecks.publisher.applicationinsights/2.2.0",
+      "hashPath": "aspnetcore.healthchecks.publisher.applicationinsights.2.2.0.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.Publisher.Datadog/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OjMnoZYqk+kw8E4ceuUkIFfOFjzYOExoJU3byJd9Cz/e55ct7K55FlV5WfCixuGz4WP1mXK6t2FXC4cM9Ji2Qg==",
+      "path": "aspnetcore.healthchecks.publisher.datadog/2.2.0",
+      "hashPath": "aspnetcore.healthchecks.publisher.datadog.2.2.0.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.Publisher.Prometheus/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-682Tzw5llYQ77WbXA4JGcdeYgeV2hd7wITaTqjNUVLvrk2ekoDzJ2LYZ0jDr9NBbe1pNp1+gH5N5e5Bj1LVCPA==",
+      "path": "aspnetcore.healthchecks.publisher.prometheus/2.2.0",
+      "hashPath": "aspnetcore.healthchecks.publisher.prometheus.2.2.0.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.Publisher.Seq/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Rpu0tJOQO9MmadGbSuy9FYY0Z4A6mESHspG6eZsuw/gdcf8yLntWqGAoFHlzTVJSMtbEx5GecX6s1RqAaJNLjQ==",
+      "path": "aspnetcore.healthchecks.publisher.seq/2.2.2",
+      "hashPath": "aspnetcore.healthchecks.publisher.seq.2.2.2.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.SqlServer/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4IB9MFxRjYozjVsysi4Qkq//v5HmcR2fRDz56UC7PdqtuouWQW+L46qNdSxvGumIaS6o9W6uJcwFRO96Ja2cQA==",
+      "path": "aspnetcore.healthchecks.sqlserver/2.2.0",
+      "hashPath": "aspnetcore.healthchecks.sqlserver.2.2.0.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UhjY0IlJF3ID6xm4aIWvHp1jjaNYv/AOe6fVBNzPUucuDEp0jdTAnYx/oSXZCmu6RnzMz3a+6Hgws1sYdDBZfQ==",
+      "path": "aspnetcore.healthchecks.ui/2.2.0",
+      "hashPath": "aspnetcore.healthchecks.ui.2.2.0.nupkg.sha512"
+    },
+    "AspNetCore.HealthChecks.UI.Client/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hdCbuAX0AQT3kT9wY+jziWYLfHJonkAB9ESir6VV2biub5llPtTlZvyCHyBbHhXd3t3Ng8rJSGm/4Mj0soHz4g==",
+      "path": "aspnetcore.healthchecks.ui.client/2.2.0",
+      "hashPath": "aspnetcore.healthchecks.ui.client.2.2.0.nupkg.sha512"
     },
     "AutoMapper/8.1.0": {
       "type": "package",
@@ -3453,12 +4032,82 @@
       "path": "automapper.extensions.microsoft.dependencyinjection/6.1.0",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512"
     },
+    "DogStatsD-CSharp-Client/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SihJSK5/7rhMMUL8gc6K89lHkE83xfprNx0sgrdGH7K3xAS+fX1ocx+ywyJ9uLEAWhMUPBeui8dtZAjb/yIuBA==",
+      "path": "dogstatsd-csharp-client/3.3.0",
+      "hashPath": "dogstatsd-csharp-client.3.3.0.nupkg.sha512"
+    },
+    "elmah/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UGnc/NHz0SHNc5eWaW+NynuYWFn+KM2NEoBJbavDt6s8pSBZQgDkKaaqvEV43TiF5GB1uDVjXLx1yjdfP78UPQ==",
+      "path": "elmah/1.2.2",
+      "hashPath": "elmah.1.2.2.nupkg.sha512"
+    },
+    "elmah.corelibrary/1.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OEx4ds9r2bw2/45VZwfw11lLv4y+mC2FUZxp7LsjmauFxj92K1kx8hafSBvls+V9s0WH0wv84B1LfWN/EaGfkg==",
+      "path": "elmah.corelibrary/1.2.2",
+      "hashPath": "elmah.corelibrary.1.2.2.nupkg.sha512"
+    },
+    "elmah.io/2.0.29": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YwN2NART4xDYexRmqSocyIBK2UN3Fo4Q/yXJsKoJnZB6efFBggD++mJmZg18ugIo2uIkvkHo1ociTle8L43RpQ==",
+      "path": "elmah.io/2.0.29",
+      "hashPath": "elmah.io.2.0.29.nupkg.sha512"
+    },
+    "Elmah.Io.AspNetCore/3.8.101": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gk5OFLUQplSR67L8SyxB3yvBqRlAynTuKPUbrW9juX+qlo5awg4KvPDjVntJ4chaqMTrDlTS5f2xhF5U0LI6sQ==",
+      "path": "elmah.io.aspnetcore/3.8.101",
+      "hashPath": "elmah.io.aspnetcore.3.8.101.nupkg.sha512"
+    },
+    "Elmah.Io.AspNetCore.HealthChecks/3.7.80": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UYyLCic7toOXUILWhwN93AjmP73PM/wNjxpJCVVYHYpB16K9nXowkoYdtUQyzd+nsWAZgCigpitT1e+Vuhr7Jw==",
+      "path": "elmah.io.aspnetcore.healthchecks/3.7.80",
+      "hashPath": "elmah.io.aspnetcore.healthchecks.3.7.80.nupkg.sha512"
+    },
+    "Elmah.Io.Client/3.11.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xw/88ougpuJHj+N1XtnDcYH9Lghw6PrnXsIYj86SY1zjWsGcayxqGdPthSPFl5AqaCWx5xDWruwmTFdFBHGA+Q==",
+      "path": "elmah.io.client/3.11.15",
+      "hashPath": "elmah.io.client.3.11.15.nupkg.sha512"
+    },
+    "elmah.io.core/2.0.29": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ue4ypnGi3fj8WrCGQIZW723p417WT3EOzVK4P73IulKBsfqOJFU4pNtLSDnK3p1NBNrpMeZXfQachf4TJlhG8g==",
+      "path": "elmah.io.core/2.0.29",
+      "hashPath": "elmah.io.core.2.0.29.nupkg.sha512"
+    },
+    "Elmah.Io.Extensions.Logging/3.10.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIa+bwf7402jj+nMEfZgP5g6AMP5h2ZsGlQGAE4MXuOlVBlgePpveATJFnu/LjM09rG1309PATzujJrpUj9uaA==",
+      "path": "elmah.io.extensions.logging/3.10.15",
+      "hashPath": "elmah.io.extensions.logging.3.10.15.nupkg.sha512"
+    },
     "FluentValidation/8.3.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-tQULydqVfFi68qjEw4Y+P3wM1Xp7kppLpUqPVKI6u8NDwlPVTm6V96qnLWCTO4khn7WtQ1p3ysnrNTl98fdJpA==",
       "path": "fluentvalidation/8.3.0",
       "hashPath": "fluentvalidation.8.3.0.nupkg.sha512"
+    },
+    "Microsoft.ApplicationInsights/2.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MK9h+YZKiZulsgbzwTi5beMKjv9DRgNVABS+JC4jBObwKchdDmDumJlVG8YWpWZ3rVBdo0EI8D+A4CRfag7Ikg==",
+      "path": "microsoft.applicationinsights/2.7.2",
+      "hashPath": "microsoft.applicationinsights.2.7.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Versioning/3.1.6": {
       "type": "package",
@@ -3473,6 +4122,13 @@
       "sha512": "sha512-+Xaa1Qsny2idroDWfnjQh2ye1E+Fp/SjiS7DNUDFDKjf0iDbD0s15Phq+nzWXf5xJtY1T5QnZPvxiPBe4w0E1w==",
       "path": "microsoft.aspnetcore.mvc.versioning.apiexplorer/3.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.versioning.apiexplorer.3.2.0.nupkg.sha512"
+    },
+    "Microsoft.Data.Sqlite.Core/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VJ0kOuf3wp9xyarhBla0JJlwdxz28g09rI4NP8ly8I8/ZhrOZZLtlYvjiMZAPNm0+45+dZ+VXUiO7n4IrP52Zw==",
+      "path": "microsoft.data.sqlite.core/2.1.0",
+      "hashPath": "microsoft.data.sqlite.core.2.1.0.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.2.4": {
       "type": "package",
@@ -3502,6 +4158,34 @@
       "path": "microsoft.entityframeworkcore.relational/2.2.4",
       "hashPath": "microsoft.entityframeworkcore.relational.2.2.4.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational.Design/1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WqPO8M9Ho0CiJ1tnIgWgXoAPt8/oIE8lcELZYbvmiVyr59f395HmHQhGCXti0/DePgPb7N6EHTIgCczRyuqIkg==",
+      "path": "microsoft.entityframeworkcore.relational.design/1.1.5",
+      "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.5.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rv4J+Ad/dIV2ZqZaGtzWrn4DK93OL/I8aB1O7kzewL4rXwCjjHuBiY2hn1wtXoXx4nY41O6sBUXb0j0iLbNodg==",
+      "path": "microsoft.entityframeworkcore.sqlite/2.1.1",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.2.1.1.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite.Core/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EU7Bualo91YkF5MoKdgnEKgJUOyajCKv4xOERWCoR34VmNeajQZk3tZHDVOlw2Xx/aTeRI+ktM20LyWdhBEk2A==",
+      "path": "microsoft.entityframeworkcore.sqlite.core/2.1.1",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.core.2.1.1.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wRkG4GLudfVMcGbcLn8G+deaKKZR0iJw7Oj8iKlkzp/JomQVN9N3KuRgDwsyZJ7DMxvJB7+dm+eexYxtaAjgUw==",
+      "path": "microsoft.entityframeworkcore.sqlite.design/1.1.5",
+      "hashPath": "microsoft.entityframeworkcore.sqlite.design.1.1.5.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.SqlServer/2.2.4": {
       "type": "package",
       "serviceable": true,
@@ -3509,12 +4193,75 @@
       "path": "microsoft.entityframeworkcore.sqlserver/2.2.4",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.2.2.4.nupkg.sha512"
     },
+    "Microsoft.Rest.ClientRuntime/2.3.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KDYlgTyO693V6pi6SGk9eg+dDvKjuOgmkapbHdpnB1SmTPKpvWxVLIMyARJsCFLfB6axyURUJHOfvxBQ0yJKeg==",
+      "path": "microsoft.rest.clientruntime/2.3.21",
+      "hashPath": "microsoft.rest.clientruntime.2.3.21.nupkg.sha512"
+    },
+    "prometheus-net/2.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uQZT0KAJDlrBDRYofQZDyg7aY34sYXfcGixRfBBmDB9VI1zWKgT9SyjLemmVMCimgva+cES6/MtQK1+VTXyDFQ==",
+      "path": "prometheus-net/2.1.3",
+      "hashPath": "prometheus-net.2.1.3.nupkg.sha512"
+    },
+    "protobuf-net/2.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3wzpT1tpm1OhCEBrrf8BHvTjASwk++k8NgLgkBx8RhkRE1RfJvhszgCMYT/8TUhIi4R6F0x4OcGELyviAADwQg==",
+      "path": "protobuf-net/2.3.4",
+      "hashPath": "protobuf-net.2.3.4.nupkg.sha512"
+    },
     "Remotion.Linq/2.2.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-twDAH8dAXXCAf3sRv1Tf94u66eEHvgU75hfn1nn2v4fSWXD50XoDOAk8WpSrbViNuMkB4kN1ElnOGm1c519IHg==",
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
+      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
+      "path": "sqlitepclraw.core/1.1.11",
+      "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-x5nuN19UdLgPKcP94lTuVSDTosDGIU3HAMmozd0VoLY5/dCgSl2Ru41Tz44IsAW33ylftboQlnVhahCtVR+3AA==",
+      "path": "sqlitepclraw.lib.e_sqlite3.linux/1.1.11",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.linux.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mjLRS9qb8JnKKHdowd3bSlOnEGSgGuXREBXHU8xecUlMCLoKMj7XEg7EDQeeu89aYGtSegLY95BRHnA9p0+q2g==",
+      "path": "sqlitepclraw.lib.e_sqlite3.osx/1.1.11",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.osx.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JvtHjNrd/est9wJitEiWx1O08XqBm4/l3Lhf01cFf9cIoNxhI+/idcYLMKS4XhewgaSHpuB1/Pi1W6VRjXrmIg==",
+      "path": "sqlitepclraw.lib.e_sqlite3.v110_xp/1.1.11",
+      "hashPath": "sqlitepclraw.lib.e_sqlite3.v110_xp.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.provider.e_sqlite3.netstandard11/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fvDbTA/2+A3sfLlXYXOHKIFP/ZcL8yQJnr+VxwyCy2BPK2jLZg3XXStc1AokU5uC+dCDl5k3bpCiBdqYU1bz6g==",
+      "path": "sqlitepclraw.provider.e_sqlite3.netstandard11/1.1.11",
+      "hashPath": "sqlitepclraw.provider.e_sqlite3.netstandard11.1.1.11.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/4.0.0": {
       "type": "package",
@@ -3564,6 +4311,27 @@
       "sha512": "sha512-Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
+    },
+    "System.Net.NameResolution/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
+      "path": "system.net.nameresolution/4.3.0",
+      "hashPath": "system.net.nameresolution.4.3.0.nupkg.sha512"
+    },
+    "System.Net.Requests/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OZNUuAs0kDXUzm7U5NZ1ojVta5YFZmgT2yxBqsQ7Eseq5Ahz88LInGRuNLJ/NP2F8W1q7tse1pKDthj3reF5QA==",
+      "path": "system.net.requests/4.3.0",
+      "hashPath": "system.net.requests.4.3.0.nupkg.sha512"
+    },
+    "System.Net.WebHeaderCollection/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XZrXYG3c7QV/GpWeoaRC02rM6LH2JJetfVYskf35wdC/w2fFDFMphec4gmVH2dkll6abtW14u9Rt96pxd9YH2A==",
+      "path": "system.net.webheadercollection/4.3.0",
+      "hashPath": "system.net.webheadercollection.4.3.0.nupkg.sha512"
     },
     "DevIO.Business/1.0.0": {
       "type": "project",

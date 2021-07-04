@@ -50,9 +50,49 @@
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
           "dependencies": {
+            "AspNetCore.HealthChecks.Publisher.ApplicationInsights": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AspNetCore.HealthChecks.Publisher.Datadog": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AspNetCore.HealthChecks.Publisher.Prometheus": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AspNetCore.HealthChecks.Publisher.Seq": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[6.1.0, )"
+            },
+            "Elmah.Io.AspNetCore": {
+              "target": "Package",
+              "version": "[3.8.101, )"
+            },
+            "Elmah.Io.AspNetCore.HealthChecks": {
+              "target": "Package",
+              "version": "[3.7.80, )"
+            },
+            "Elmah.Io.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.10.15, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -77,6 +117,10 @@
               "target": "Package",
               "version": "[2.2.4, )"
             },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -86,6 +130,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "elmah": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "elmah.io": {
+              "target": "Package",
+              "version": "[2.0.29, )"
             }
           },
           "imports": [

@@ -10,3 +10,15 @@ C:\Projetos\Cursos\DesenvolvedorIO\ASP.NET Core\MVC\Projetos\04 - App Completa\M
 C:\Projetos\Cursos\DesenvolvedorIO\ASP.NET Core\MVC\Projetos\04 - App Completa\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
 C:\Projetos\Cursos\DesenvolvedorIO\ASP.NET Core\MVC\Projetos\04 - App Completa\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.dll
 C:\Projetos\Cursos\DesenvolvedorIO\ASP.NET Core\MVC\Projetos\04 - App Completa\MinhaAppMvcCompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.pdb
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.deps.json
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.dll
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Data.pdb
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Business.dll
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\bin\Release\netcoreapp2.2\DevIO.Business.pdb
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csprojAssemblyReference.cache
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.AssemblyInfoInputs.cache
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.AssemblyInfo.cs
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csproj.CoreCompileInputs.cache
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.dll
+E:\Labs\Desenvolvedor.io\REST-com-ASP.NET-Core-WebAPI\MinhaAPICompleta\src\DevIO.Data\obj\Release\netcoreapp2.2\DevIO.Data.pdb
